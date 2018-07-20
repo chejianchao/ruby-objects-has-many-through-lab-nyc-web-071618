@@ -20,4 +20,10 @@ class Doctor
       appointment.doctor == self
     }
   end
+  
+  def patients
+    appointments.map{|app|
+      app.patient
+    }
+  end
 end
